@@ -48,6 +48,7 @@ input[type="search"] {
 .searchForm__group {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-end;
 }
 
 .searchForm__group .formInput {
@@ -375,7 +376,7 @@ input[type="search"] {
     position: absolute;
     top: 3.75rem;
     right: var(--spacing-lg);
-    transform: translate(0.25rem, -0.25rem;);
+    transform: translate(0.25rem, -0.25rem);
   }
 
   .button--burger {
