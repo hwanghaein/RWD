@@ -48,7 +48,6 @@ input[type="search"] {
 .searchForm__group {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
 }
 
 .searchForm__group .formInput {
@@ -447,7 +446,7 @@ input[type="search"] {
     border-bottom: 1px solid var(--silver);
   }
 
-  .menu.is--active .menu__list {   
+  .menu.is--active .menu__list {
     transform: none;
   }
 
@@ -479,7 +478,7 @@ input[type="search"] {
     display: flex;
     flex-flow: column nowrap;
   }
-}
+
 
 /* 모바일 Medium Size (640px 이상) */
 @media (min-width: 640px) and (max-width: 767px) {
@@ -498,6 +497,7 @@ input[type="search"] {
   .twitter {
     width: 48%;
   }
+}
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -557,16 +557,6 @@ input[type="search"] {
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-  }
-
-  /* 데스크탑 트위터 */
-  .twitter__userProfile {
-    width: 100px;
-    height: 100px;
-  }
-
-  /* 데스크탑 메인 콘텐츠 */
-  .appMain {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -575,6 +565,12 @@ input[type="search"] {
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
     gap: var(--spacing-base);
+  }
+
+  /* 데스크탑 트위터 */
+  .twitter__userProfile {
+    width: 100px;
+    height: 100px;
   }
 
   .book {
