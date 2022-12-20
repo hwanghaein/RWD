@@ -8,7 +8,6 @@ body *::after {
   box-sizing: border-box;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -25,16 +24,40 @@ body {
 
 /* 유연한 미디어 */
 img {
-  /* 이미지는 원본크기보다 안커지게(맥시멈을 제한, 원본크기로 렌더링, 아무리 늘려도 크기는 똑같음)
-  원본크기보다 줄였을때는 이미지도 같이 줄여짐 */
   max-width: 100%;
   height: auto;
 }
 
-/* 비디오는 무조건 커지게 (부모 크기에 따라 늘었다 줄었다함-부모-figure class="news__videoContainer" 크기 기준으로 계산) */
 video {
   width: 100%;
   height: auto;
 }
 
+/* 가로가 100%일 때 세로는 56.25% */
 
+/* 반응형 Iframe */
+
+
+.iframeWrapper {
+  position: relative;
+}
+.iframeRatio-21-9 {
+  aspect-ratio: 21/9;
+}
+.iframeRatio-16-9 {
+  aspect-ratio: 16/9;
+}
+.iframeRatio-4-3 {
+  aspect-ratio: 4/3;
+}
+.iframeRatio-1-1 {
+  aspect-ratio: 1/1;
+}
+
+.iframeWrapper iframe {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+}
